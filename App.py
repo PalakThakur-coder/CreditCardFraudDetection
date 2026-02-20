@@ -1,12 +1,15 @@
 from flask import Flask, render_template, request
 import numpy as np
 import pickle
+import os
 
 app = Flask(__name__)
 
 # Load model and scaler
-model = pickle.load(open('credit.pkl', 'rb'))
-scaler = pickle.load(open('sc.pkl', 'rb'))
+model_path = os.path.join(os.path.dirname(__file__), 'credit.pkl')
+scaler_path = os.path.join(os.path.dirname(__file__), 'sc.pkl')
+model = pickle.load(open(model_path, 'rb'))
+scaler = pickle.load(open(scaler_path, 'rb'))
 
 @app.route('/')
 def home():
