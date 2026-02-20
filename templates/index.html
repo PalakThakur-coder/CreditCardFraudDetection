@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Credit Card Fraud Detection</title>
+
+<style>
+body {
+    background: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+    font-family: Arial;
+}
+
+input {
+    padding: 8px;
+    margin: 4px;
+    width: 120px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Credit Card Fraud Detection</h2>
+
+<form action="/predict" method="post">
+
+<input type="number" name="Time" placeholder="Time" step="any" required>
+<input type="number" name="V1" placeholder="V1" step="any" required>
+<input type="number" name="V2" placeholder="V2" step="any" required>
+<input type="number" name="V3" placeholder="V3" step="any" required>
+<input type="number" name="V4" placeholder="V4" step="any" required>
+<input type="number" name="V5" placeholder="V5" step="any" required>
+<input type="number" name="V6" placeholder="V6" step="any" required>
+<input type="number" name="V7" placeholder="V7" step="any" required>
+<input type="number" name="V8" placeholder="V8" step="any" required>
+<input type="number" name="V9" placeholder="V9" step="any" required>
+<input type="number" name="V10" placeholder="V10" step="any" required>
+<input type="number" name="V11" placeholder="V11" step="any" required>
+<input type="number" name="V12" placeholder="V12" step="any" required>
+<input type="number" name="V13" placeholder="V13" step="any" required>
+<input type="number" name="V14" placeholder="V14" step="any" required>
+<input type="number" name="V15" placeholder="V15" step="any" required>
+<input type="number" name="V16" placeholder="V16" step="any" required>
+<input type="number" name="V17" placeholder="V17" step="any" required>
+<input type="number" name="V18" placeholder="V18" step="any" required>
+<input type="number" name="V19" placeholder="V19" step="any" required>
+<input type="number" name="V20" placeholder="V20" step="any" required>
+<input type="number" name="V21" placeholder="V21" step="any" required>
+<input type="number" name="V22" placeholder="V22" step="any" required>
+<input type="number" name="V23" placeholder="V23" step="any" required>
+<input type="number" name="V24" placeholder="V24" step="any" required>
+<input type="number" name="V25" placeholder="V25" step="any" required>
+<input type="number" name="V26" placeholder="V26" step="any" required>
+<input type="number" name="V27" placeholder="V27" step="any" required>
+<input type="number" name="V28" placeholder="V28" step="any" required>
+<input type="number" name="Amount" placeholder="Amount" step="any" required>
+
+<br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+<h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
